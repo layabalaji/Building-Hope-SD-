@@ -4,7 +4,7 @@
 // shape FastAPI's OAuth2PasswordRequestForm expects. On success, stores
 // the JWT and redirects to the dashboard.
 
-const BHSD_AUTH_ENDPOINT = 'http://localhost:8000/auth/login';
+const BHSD_AUTH_ENDPOINT = 'https://buildinghope-backend.onrender.com/auth/login';
 const BHSD_TOKEN_KEY = 'bhsd_admin_token';
 
 document.addEventListener('DOMContentLoaded', () => {

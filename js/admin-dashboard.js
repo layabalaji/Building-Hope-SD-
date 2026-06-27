@@ -1,6 +1,6 @@
 // Building Hope San Diego — admin dashboard (gmail-style inbox)
 
-const BHSD_API_BASE = 'http://localhost:8000';
+const BHSD_API_BASE = 'https://buildinghope-backend.onrender.com';
 const BHSD_TOKEN_KEY = 'bhsd_admin_token';
 
 const token = localStorage.getItem(BHSD_TOKEN_KEY);

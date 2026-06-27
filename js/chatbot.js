@@ -7,7 +7,7 @@
 //
 // CONFIG: point this at your backend once it's deployed. While developing
 // locally, run the backend (see backend/README.md) and leave this as-is.
-const BHSD_CHAT_ENDPOINT = 'http://localhost:8000/chat';
+const BHSD_CHAT_ENDPOINT = 'https://buildinghope-backend.onrender.com/chat';
 
 // Pages the bot can route users to. Keep this in sync with your actual
 // page folders — the backend classifier returns a short "page" key

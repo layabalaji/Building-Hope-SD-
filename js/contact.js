@@ -5,7 +5,7 @@
 //
 // CONFIG: point this at your deployed backend later, same idea as
 // BHSD_CHAT_ENDPOINT in js/chatbot.js.
-const BHSD_CONTACT_ENDPOINT = 'http://localhost:8000/contact';
+const BHSD_CONTACT_ENDPOINT = 'https://buildinghope-backend.onrender.com/contact';
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('bhsd-contact-form');
