@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inbox — Building Hope San Diego Admin</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="nav-logo"><span class="dot"></span> Building Hope San Diego — Admin</a>
+    <button class="btn btn-outline" id="bhsd-admin-logout">Log out</button>
+  </nav>
+</header>
+
+<div class="admin-shell">
+  <aside class="admin-list" id="bhsd-admin-list">
+    <p style="padding:16px; color:var(--text-muted); font-size:14px;">Loading messages...</p>
+  </aside>
+  <main class="admin-detail" id="bhsd-admin-detail">
+    <div class="admin-empty-state"><p>Select a message to read it.</p></div>
+  </main>
+</div>
+
+<script src="/js/admin-dashboard.js"></script>
+</body>
+</html>

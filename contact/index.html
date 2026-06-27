@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Building Hope San Diego</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="nav-logo"><span class="dot"></span> Building Hope San Diego</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/the-issue/">The issue</a></li>
+      <li><a href="/events/">Events</a></li>
+      <li><a href="/get-involved/" class="nav-cta">Get involved</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu">Menu</button>
+  </nav>
+</header>
+
+<section class="hero" style="padding-bottom:48px;">
+  <div class="container" style="grid-template-columns:1fr; max-width:760px;">
+    <div>
+      <span class="eyebrow">Contact</span>
+      <h1>Get in touch</h1>
+      <p class="lede">[Placeholder intro.]</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container" style="max-width:560px;">
+    <form id="bhsd-contact-form">
+      <div class="form-field">
+        <label for="c-name">Full name</label>
+        <input type="text" id="c-name" name="name" required>
+      </div>
+      <div class="form-field">
+        <label for="c-email">Email</label>
+        <input type="email" id="c-email" name="email" required>
+      </div>
+      <div class="form-field">
+        <label for="c-subject">Subject</label>
+        <input type="text" id="c-subject" name="subject" required>
+      </div>
+      <div class="form-field">
+        <label for="c-message">Message</label>
+        <textarea id="c-message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" id="bhsd-contact-submit">Send message</button>
+      <p id="bhsd-contact-status" style="margin-top:14px; font-size:14px;"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Building Hope San Diego</h4>
+        <p style="max-width:32ch; color:#C9D5CE;">[Placeholder] A student-led nonprofit supporting underserved youth in San Diego.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/about/">About us</a></li>
+          <li><a href="/the-issue/">The issue</a></li>
+          <li><a href="/events/">Events</a></li>
+          <li><a href="/get-involved/">Get involved</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>[placeholder@buildinghopesd.org]</li>
+          <li><a href="/contact/">Contact form</a></li>
+          <li>[Instagram / social links]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="bhsd-year"></span> Building Hope San Diego. Student-led nonprofit.</div>
+  </div>
+</footer>
+
+<button id="bhsd-chat-launcher" aria-label="Open chat">💬</button>
+<div id="bhsd-chat-panel">
+  <div id="bhsd-chat-header">Ask about Building Hope SD</div>
+  <div id="bhsd-chat-messages"></div>
+  <div id="bhsd-chat-input-row">
+    <input id="bhsd-chat-input" type="text" placeholder="Ask a question or say where you want to go...">
+    <button id="bhsd-chat-send">Send</button>
+  </div>
+</div>
+
+<script src="/js/main.js"></script>
+<script src="/js/contact.js"></script>
+<script src="/js/chatbot.js"></script>
+</body>
+</html>

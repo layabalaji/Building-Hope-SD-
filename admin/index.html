@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin login — Building Hope San Diego</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="nav-logo"><span class="dot"></span> Building Hope San Diego</a>
+  </nav>
+</header>
+
+<section class="section" style="min-height: 70vh; display:flex; align-items:center;">
+  <div class="container" style="max-width:420px;">
+    <div class="card">
+      <h2 style="margin-bottom:6px;">Admin login</h2>
+      <p class="lede" style="font-size:15px; margin-bottom:22px;">Internal access only.</p>
+      <form id="bhsd-admin-login-form">
+        <div class="form-field">
+          <label for="a-username">Username</label>
+          <input type="text" id="a-username" name="username" required autocomplete="username">
+        </div>
+        <div class="form-field">
+          <label for="a-password">Password</label>
+          <input type="password" id="a-password" name="password" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn btn-primary" id="bhsd-admin-login-submit" style="width:100%;">Log in</button>
+        <p id="bhsd-admin-login-error" style="margin-top:14px; font-size:14px; color:#B3261E;"></p>
+      </form>
+    </div>
+    <p style="text-align:center; margin-top:18px;"><a href="/">← Back to site</a></p>
+  </div>
+</section>
+
+<script src="/js/admin-login.js"></script>
+</body>
+</html>

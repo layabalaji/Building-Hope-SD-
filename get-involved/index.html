@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get involved — Building Hope San Diego</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="nav-logo"><span class="dot"></span> Building Hope San Diego</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/the-issue/">The issue</a></li>
+      <li><a href="/events/">Events</a></li>
+      <li><a href="/get-involved/" class="active nav-cta">Get involved</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu">Menu</button>
+  </nav>
+</header>
+
+<section class="hero" style="padding-bottom:48px;">
+  <div class="container" style="grid-template-columns:1fr; max-width:760px;">
+    <div>
+      <span class="eyebrow">Get involved</span>
+      <h1>However you can show up, it helps</h1>
+      <p class="lede">[Placeholder intro on the ways to help.]</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="grid-3">
+      <div class="card">
+        <span class="icon-tag">V</span>
+        <h3>Volunteer</h3>
+        <p>[Placeholder] Join us at outreach events and community sessions.</p>
+      </div>
+      <div class="card">
+        <span class="icon-tag">D</span>
+        <h3>Donate</h3>
+        <p>[Placeholder] Funds and supplies go directly toward outreach and support for youth in our community. Add your donation link/platform here.</p>
+      </div>
+      <div class="card">
+        <span class="icon-tag">P</span>
+        <h3>Partner</h3>
+        <p>[Placeholder] We're open to partnering with schools, community organizations, and local businesses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:560px;">
+    <h2>Sign up to volunteer</h2>
+    <p class="lede" style="margin-bottom:24px;">[Placeholder] This form is a starting template — once your backend is live, wire this up to actually submit (e.g. to your contact endpoint or a service like Formspree/Google Forms in the meantime).</p>
+    <form id="bhsd-volunteer-form">
+      <div class="form-field">
+        <label for="v-name">Full name</label>
+        <input type="text" id="v-name" name="name" required>
+      </div>
+      <div class="form-field">
+        <label for="v-email">Email</label>
+        <input type="email" id="v-email" name="email" required>
+      </div>
+      <div class="form-field">
+        <label for="v-interest">I'm interested in</label>
+        <select id="v-interest" name="interest">
+          <option>Volunteering at events</option>
+          <option>Donating supplies</option>
+          <option>Partnering as an organization</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="v-message">Anything else?</label>
+        <textarea id="v-message" name="message" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Building Hope San Diego</h4>
+        <p style="max-width:32ch; color:#C9D5CE;">[Placeholder] A student-led nonprofit supporting underserved youth in San Diego.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/about/">About us</a></li>
+          <li><a href="/the-issue/">The issue</a></li>
+          <li><a href="/events/">Events</a></li>
+          <li><a href="/get-involved/">Get involved</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>[placeholder@buildinghopesd.org]</li>
+          <li><a href="/contact/">Contact form</a></li>
+          <li>[Instagram / social links]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="bhsd-year"></span> Building Hope San Diego. Student-led nonprofit.</div>
+  </div>
+</footer>
+
+<button id="bhsd-chat-launcher" aria-label="Open chat">💬</button>
+<div id="bhsd-chat-panel">
+  <div id="bhsd-chat-header">Ask about Building Hope SD</div>
+  <div id="bhsd-chat-messages"></div>
+  <div id="bhsd-chat-input-row">
+    <input id="bhsd-chat-input" type="text" placeholder="Ask a question or say where you want to go...">
+    <button id="bhsd-chat-send">Send</button>
+  </div>
+</div>
+
+<script src="/js/main.js"></script>
+<script src="/js/chatbot.js"></script>
+</body>
+</html>
